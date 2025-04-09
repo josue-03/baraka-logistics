@@ -1,75 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Baraka Technologies and Logistics</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraka Technologies and Logistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f9f9f9;
+            color: #1a1a1a;
+        }
+        header {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            text-align: right;
+            margin-top: -3rem;
+            padding-right: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007aff;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #004080;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #f1f1f1;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Baraka Tech & Logistics</div>
-      <ul class="nav-links">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <select id="lang-switch">
-        <option value="fr">FR</option>
-        <option value="en">EN</option>
-      </select>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a href="?lang=fr">FR</a> | <a href="?lang=en">EN</a>
+        </nav>
+        <h1>Baraka Technologies and Logistics</h1>
+        <p>Modern Engineering for a Smarter Future</p>
+    </header>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>Construisons l'avenir avec intelligence</h1>
-      <p>Ingénierie moderne en génie civil, électricité, électronique et réseaux.</p>
-    </div>
-    <div class="slider">
-      <img src="https://source.unsplash.com/400x250/?construction" alt="Construction 1"/>
-      <img src="https://source.unsplash.com/400x250/?engineering" alt="Engineering"/>
-      <img src="https://source.unsplash.com/400x250/?architecture" alt="Architecture"/>
-    </div>
-  </section>
+    <section>
+        <h2>Nos Services / Our Services</h2>
+        <p><strong>Génie Civil / Civil Engineering</strong> : Routes, bâtiments intelligents, architecture moderne.</p>
+        <p><strong>Électronique / Electronics</strong> : Domotique, systèmes embarqués, automatisation industrielle.</p>
+        <p><strong>Électricité / Electricity</strong> : Installations électriques, énergie solaire, maintenance réseaux.</p>
+        <p><strong>Réseaux / Networking</strong> : Câblage structuré, vidéosurveillance, interconnexion de bâtiments.</p>
+    </section>
 
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Baraka Technologies and Logistics est une entreprise regroupant des ingénieurs spécialisés dans divers domaines pour construire des routes, maisons et infrastructures modernes.</p>
-  </section>
+    <section>
+        <h2>Assistance / Ask Us</h2>
+        <form>
+            <label>Posez votre question / Ask your question :</label><br>
+            <textarea rows="5" cols="60" placeholder="Écrivez ici..."></textarea><br><br>
+            <button type="submit" style="background:#007aff; color:white; padding:10px 20px; border:none; border-radius:10px;">Envoyer / Send</button>
+        </form>
+    </section>
 
-  <section id="services">
-    <h2>Nos Services</h2>
-    <ul>
-      <li>Construction de bâtiments modernes</li>
-      <li>Installation électrique & réseaux</li>
-      <li>Domotique et sécurité intelligente</li>
-      <li>Planification et suivi de projets</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" name="name" placeholder="Votre nom" required/>
-      <input type="email" name="email" placeholder="Votre email" required/>
-      <textarea placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-    <div class="contact-info">
-      <p>Email: josuebaraaka@gmail.com</p>
-      <p>Téléphone: +250792412058 / +243998363568</p>
-      <p>Adresse: Rwanda, Kigali, Gisozi KG 730 ST</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Baraka Technologies and Logistics. Tous droits réservés.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        Contact: josuebaraaka@gmail.com | WhatsApp: +250792412058 / +243998363568<br>
+        Adresse: Rwanda, Kigali, Gisozi KG 730 ST
+    </footer>
 </body>
 </html>
